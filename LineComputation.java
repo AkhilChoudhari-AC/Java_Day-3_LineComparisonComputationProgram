@@ -6,8 +6,8 @@ import java.util.Scanner;
 public class LineComputation {
     public static void main(String[] args) {
 
-        int ax1,ax2,ay1,ay2;
-        int bx1,bx2,by1,by2;
+        int ax1, ax2, ay1, ay2;
+        int bx1, bx2, by1, by2;
 
         double Dist1;
         double Dist2;
@@ -31,17 +31,18 @@ public class LineComputation {
         System.out.println("Enter the y2 coordinate of second line");
         by2 = sc.nextInt();
 
-        Dist1 = Math.sqrt((ax2-ax1)*(ax2-ax1) + (ay2-ay1)*(ay2-ay1));
-        System.out.println("Distance between"+"("+ax1+","+ay1+"),"+"("+ax2+","+ay2+"),"+"Length of first line:"+Dist1);
-        Dist2 = Math.sqrt((bx2-bx1)*(bx2-bx1) + (by2-by1)*(by2-by1));
-        System.out.println("Distance between"+"("+bx1+","+by1+"),"+"("+bx2+","+by2+"),"+"Length of second line:"+Dist2);
+        Dist1 = Math.sqrt((ax2 - ax1) * (ax2 - ax1) + (ay2 - ay1) * (ay2 - ay1));
+        System.out.println("Distance between" + "(" + ax1 + "," + ay1 + ")," + "(" + ax2 + "," + ay2 + ")," + "Length of first line:" + Dist1);
+        Dist2 = Math.sqrt((bx2 - bx1) * (bx2 - bx1) + (by2 - by1) * (by2 - by1));
+        System.out.println("Distance between" + "(" + bx1 + "," + by1 + ")," + "(" + bx2 + "," + by2 + ")," + "Length of second line:" + Dist2);
 
-        if ( Dist1 == Dist2){
+        if (Dist1 == Dist2) {
             System.out.println("Length of First line and Second line is equal");
+        } else if (Dist1 > Dist2) {
+            System.out.println("Length of the First line is Greater than the Second line");
         }
-        else {
-            System.out.println("Length of first and second line are not equal");
-        }
+        else
+            System.out.println("Length of the Second line is greater than the first line");
 
+        }
     }
-}
