@@ -36,7 +36,12 @@ public class LineComputation {
         Dist2 = Math.sqrt((bx2-bx1)*(bx2-bx1) + (by2-by1)*(by2-by1));
         System.out.println("Distance between"+"("+bx1+","+by1+"),"+"("+bx2+","+by2+"),"+"Length of second line:"+Dist2);
 
-
+        if ( Dist1 == Dist2){
+            System.out.println("Length of First line and Second line is equal");
+        }
+        else {
+            System.out.println("Length of first and second line are not equal");
+        }
 
     }
 }
